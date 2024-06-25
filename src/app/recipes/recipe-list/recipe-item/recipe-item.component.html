@@ -1,18 +1,17 @@
 <a
   href="#"
   (click)="onSelected()"
-  class="list-group-item clearfix">
-  <div class="pull-left">
+  class="link-underline bg-black">
+
     <h4 class="list-group-item-heading">{{ recipe?.name }}</h4>
     <p class="list-group-item-text">{{ recipe?.description }}</p>
-  </div>
-  <span class="pull-right">
-        <img
-          [ngSrc]="recipe?.imagePath || ''"
-          width="400"
-          height="200"
-          alt="{{ recipe?.name }}"
-          class="img-responsive"
-          style="max-height: 50px;"/>
-      </span>
+
+
+    <img
+      [ngSrc]="recipe?.imagePath || ''"
+      width="auto"
+      height="auto"
+      alt="{{ recipe?.name }}"
+      class="img-fluid"/>
+
 </a>

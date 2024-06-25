@@ -16,7 +16,7 @@ import {NgForOf, NgOptimizedImage, NgStyle} from "@angular/common";
   styleUrl: './recipe-list.component.css'
 })
 export class RecipeListComponent {
-  recipes: Recipe[] = [new Recipe('name', 'descr', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png')]
+  recipes: Recipe[] = [new Recipe('Recipe #1', 'Description of Recipe #1. Ingredients ETC', 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/1024px-WordPress_blue_logo.svg.png')]
   @Output() recipeSelected = new EventEmitter<Recipe>()
   onRecipeSelected(recipe:Recipe){
     this.recipeSelected.emit(recipe);

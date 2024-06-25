@@ -1,10 +1,7 @@
 <div [ngStyle]="{background:'gray'}">
-  Recipes
-  <div class="row">
-    <div class="col-md-5">
+  Recipes component
+
       <app-recipe-list (recipeSelected)="recipeSelected = $event"></app-recipe-list>
-    </div>
-    <div class="col-md-7">
       <app-recipe-detail
         *ngIf="recipeSelected; else infoText"
         [recipe]="recipeSelected"
@@ -12,6 +9,5 @@
       <ng-template #infoText>
         <p>Please select a recipe</p>
       </ng-template>
-    </div>
-  </div>
+
 </div>
